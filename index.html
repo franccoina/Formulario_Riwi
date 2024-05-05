@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Riwi</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Registro de CODERS</h1>
+        <h5>Riwi</h5>
+        <hr>
+        <form action="./" method="get">
+            <section>
+                <fieldset>
+                    <legend>Información Básica</legend>
+                        <label>Nombre</label>
+                        <input type="text" placeholder="ej: Albeiro" name="nombre-coder" id="nombre-coder" required>
+                        <hr>
+                        <label>Apellido</label>
+                        <input type="text" placeholder="ej: Echavarria" name="apellido-coder" id="apellido-coder" required>
+                        <hr>
+                        <label>Contraseña</label>
+                        <input type="password" name="clave-coder" id="clave-coder" required>
+                        <br>
+                        <br>
+                        <label>Confirmación Contraseña</label>
+                        <input type="password" name="clave-coder" id="clave-coder" required>
+                        <hr>
+                        <label>Ciudad de Residencia</label>
+                        <select required>
+                            <option name="ciudad" id="ciudad" value="none" disabled selected></option>
+                            <option name="ciudad" id="ciudad" value="med">Medellin</option>
+                            <option name="ciudad" id="ciudad" value="cali">Cali</option>
+                            <option name="ciudad" id="ciudad" value="cart">Cartagena</option>
+                            <option name="ciudad" id="ciudad" value="man">Manizales</option>
+                            <option name="ciudad" id="ciudad" value="bog">Bogotá</option>
+                            <option name="ciudad" id="ciudad" value="staMar">Santa Marta</option>
+                            <option name="ciudad" id="ciudad" value="otro">Otro</option>
+                        </select>
+                        <hr>
+                        <label>Teléfono</label>
+                        <input type="tel" name="tel-coder" id="tel-coder" value="+57 " required>
+                        <hr>
+                        <label>Correo</label>
+                        <input type="email" placeholder="ej: johndoe@example.com" name="email-coder" id="email-coder" required>
+                        <hr>
+                        <label>Fecha de Nacimiento</label>
+                        <input type="date" name="nacimiento-coder" id="nacimiento-coder" required>
+                        <hr>
+                        <label>Color Favorito:</label>
+                        <input type="color" name="favcolor-coder" id="favcolor-coder" required>
+                        <hr>
+                        <label>Foto de Perfil</label>
+                        <input type="file" name="foto-coder" id="foto-coder" required>
+                    </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Información Profesional</legend>
+                        <label>Fecha de Inicio de Estudios</label>
+                        <input type="date" name="inicio-estudios-coder" id="inicio-estudios-coder" required>
+                        <hr>
+                        <label>Nivel de Formación</label>
+                        <select required>
+                            <option name="educacion" id="educacion" value="none" disabled selected></option>
+                            <option name="educacion" id="educacion" value="pri">Primaria</option>
+                            <option name="educacion" id="educacion" value="sec">Secundaria</option>
+                            <option name="educacion" id="educacion" value="bach">Bachiller</option>
+                            <option name="educacion" id="educacion" value="tec">Técnico</option>
+                            <option name="educacion" id="educacion" value="tecno">Tecnológico</option>
+                            <option name="educacion" id="educacion" value="pre">Pregrado</option>
+                            <option name="educacion" id="educacion" value="pos">Posgrado</option>
+                        </select>
+                        <hr>
+                        <label>Adjuntar CV</label>
+                        <input type="file" name="CV-coder" id="CV-coder" enctype="multipart/for-data" required>
+                        <hr>
+                        <label>Descripción de experiencia:</label>
+                        <br>
+                        <textarea name="desc-exp-coder" id="desc-exp-coder" placeholder="Escribe aquí la descripción de la experiencia del Coder..." cols="50" rows="5" required></textarea>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Términos y condiciones</legend>
+                        <span>Leer <a href="./">Términos y condiciones</a>.</span>
+                        <br>
+                        <sub>Si ha leído y acepta los Términos y condiciones, marcar la casilla de aceptación.</sub>
+                        <hr>
+                        <span><input type="checkbox" name="terms-cond" id="terms-cond" required>Aceptar</span>
+                </fieldset>
+            </section>
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
